@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+		<title>网店运营销售数据大屏</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/echarts.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/china.js"></script>
+	</head>
+	
+	<body class="bg06">
+		<header class="header">
+		<div id='currentTime'></div>
+			<h3>网店运营销售大屏</h3>
+		</header>
+		
+		<div class="wrapper">
+			<div class="container-fluid">
+				<div class="row fill-h">
+					<div class="col-lg-3 fill-h">
+						<div class="xpanel-wrapper xpanel-wrapper-1-2">
+							<div class="xpanel">
+								<div class="title">1-12月各月销售和利润情况</div>
+								<div class="left_right_div" id="data_month"></div>
+							</div>
+						</div>
+						<div class="xpanel-wrapper xpanel-wrapper-1-2">
+							<div class="xpanel">
+								<div class="title">各产品销售情况</div>
+								<div class="left_right_div" id="data_product"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 fill-h">
+						<div class="xpanel-wrapper xpanel-wrapper-1">
+							<div class="xpanel no-padding no-bg">
+								<div class="center_title">各省份销售和利润情况</div>
+								<div class="center_div">
+									<div class="title1"></div>
+									<div class="center_div1" id="data_province"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 fill-h">
+						<div class="xpanel-wrapper xpanel-wrapper-2-3">
+							<div class="xpanel">
+								<div class="title">各地区销售和利润情况</div>
+								<div class="left_right_div" id="data_region"></div>
+							</div>
+						</div>
+						<div class="xpanel-wrapper xpanel-wrapper-1-3">
+							<div class="xpanel">
+								<div class="title">各产品经理销售和利润情况</div>
+								<div class="left_right_div" id="data_manager"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/sales_month.js"></script>
+		<script src="js/sales_product.js"></script>
+		<script src="js/sales_province.js"></script>
+		<script src="js/sales_region.js"></script>
+		<script src="js/sales_manager.js"></script>
+	</body>
+</html>
